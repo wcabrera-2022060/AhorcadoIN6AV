@@ -1,7 +1,8 @@
 const palabras = ["computadora", "teclado", "mouse", "monitor", "laptop"];
 letrasUsadas = [];
 var intentos = 6;
-palabraOculta = palabraRandom();
+palabraRandom = obtenerPalabraRandom();
+palabraOculta = ocultarPalabra(palabraRandom);
 juegoTerminado = false;
 
 
@@ -10,7 +11,7 @@ var dibujar = canvas.getContext("2d");
 
 document.getElementById("oportunidades").innerHTML = intentos;
 
-function palabraRandom(){
+function obtenerPalabraRandom(){
     return palabras[Math.floor(Math.random() * palabras.length)];
 }
 
@@ -22,5 +23,15 @@ function registroLetras(letraNueva){
     }else{
         letrasUsadas.push(letraNueva);
         document.getElementById("letrasUsadas").innerHTML = letrasUsadas;
+
+        if(palabraRandom.includes(letraNueva)){
+            for(let i; i<palabraOculta.length;i++){
+                
+            }
+        }
     }
+}
+
+function ocultarPalabra(palabra){
+    return palabra.split("").map(letra => "_");
 }
