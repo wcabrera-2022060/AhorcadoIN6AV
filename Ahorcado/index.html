@@ -5,48 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorcado</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <canvas id="dibujo" width="500" height="400" style="border:1px solid #000000;"></canvas>
-
+    <br>
+    <p id="letrasUsadas"></p>
+    <br>
+    <p id="palabraOculta"></p>
+    <br>
+    <p id="oportunidades"></p>
+    <br>
     <div class="separador">
-        <button>Q</button>
-        <button>W</button>
-        <button>E</button>
-        <button>R</button>
-        <button>T</button>
-        <button>Y</button>
-        <button>U</button>
-        <button>I</button>
-        <button>O</button>
-        <button>P</button>
+        <button onclick='registroLetras("q")'>Q</button>
+        <button onclick='registroLetras("w")'>W</button>
+        <button onclick='registroLetras("e")'>E</button>
+        <button onclick='registroLetras("r")'>R</button>
+        <button onclick='registroLetras("t")'>T</button>
+        <button onclick='registroLetras("y")'>Y</button>
+        <button onclick='registroLetras("u")'>U</button>
+        <button onclick='registroLetras("i")'>I</button>
+        <button onclick='registroLetras("o")'>O</button>
+        <button onclick='registroLetras("p")'>P</button>
     </div>
     <br>
     <div class="separador">
-        <button>A</button>
-        <button>S</button>
-        <button>D</button>
-        <button>E</button>
-        <button>F</button>
-        <button>G</button>
-        <button>H</button>
-        <button>J</button>
-        <button>K</button>
-        <button>L</button>
+        <button onclick='registroLetras("a")'>A</button>
+        <button onclick='registroLetras("s")'>S</button>
+        <button onclick='registroLetras("d")'>D</button>
+        <button onclick='registroLetras("f")'>F</button>
+        <button onclick='registroLetras("g")'>G</button>
+        <button onclick='registroLetras("h")'>H</button>
+        <button onclick='registroLetras("j")'>J</button>
+        <button onclick='registroLetras("k")'>K</button>
+        <button onclick='registroLetras("l")'>L</button>
+        <button onclick='registroLetras("ñ")'>Ñ</button>
     </div>
     <br>
     <div class="separador">
-        <button>Z</button>
-        <button>X</button>
-        <button>C</button>
-        <button>V</button>
-        <button>B</button>
-        <button>N</button>
-        <button>M</button>
+        <button onclick='registroLetras("z")'>Z</button>
+        <button onclick='registroLetras("x")'>X</button>
+        <button onclick='registroLetras("c")'>C</button>
+        <button onclick='registroLetras("v")'>V</button>
+        <button onclick='registroLetras("b")'>B</button>
+        <button onclick='registroLetras("n")'>N</button>
+        <button onclick='registroLetras("m")'>M</button>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
